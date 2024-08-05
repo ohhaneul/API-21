@@ -7,6 +7,7 @@
 #### 3️⃣ 좋아하는 동물 : 고양이 😻
 #### 4️⃣ 좋아하는 색깔 : 보라색 💜
 #### 5️⃣ 싫어하는 것 : 말대꾸
+####  ️6️⃣ 싫어하는 색 : 노란색
 ```java
 public class i {
     public static void main(String[] args) {
