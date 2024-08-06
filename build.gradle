@@ -32,6 +32,10 @@ dependencies {
 	// https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa
 	implementation group: 'org.springframework.data', name: 'spring-data-jpa', version: '3.3.2'
 
+	// 추가
+	implementation group: 'org.postgresql', name: 'postgresql', version: '42.7.3'
+	runtimeOnly 'org.postgresql:postgresql'
+
 }
 
 tasks.named('test') {

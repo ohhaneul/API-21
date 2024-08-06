@@ -1,1 +1,40 @@
-spring.application.name=api
+# spring.application.name=api
+
+spring:
+  application:
+    name: api
+  profiles:
+    active: dev
+  datasource:
+    hikari: #Connection pooling? ???? JDBC DataSource? ???? hikari ?? ??
+      connection-timeout: 3000
+      validation-timeout: 3000
+      max-lifetime: 240000
+server:
+  port: 13713
+  servlet:
+    context-path: /my-api
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    url: "jdbc:postgresql://localhost:15432/test_db"
+    driver-class-name: "org.postgresql.Driver"
+    username: "geonlee"
+    password: "geonlee"
+    hikari: #Connection pool ?? ??
+      minimum-idle: 2
+      maximum-pool-size: 2
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
