@@ -25,7 +25,7 @@ spring:
     activate:
       on-profile: dev
   datasource:
-    url: "jdbc:postgresql://localhost:15432/test_db"
+    url: "jdbc:postgresql://localhost:5432/test_db"
     driver-class-name: "org.postgresql.Driver"
     username: "geonlee"
     password: "geonlee"
